@@ -1,0 +1,32 @@
+{
+  "name": "Bond-Difference-Grapher",
+  "version": "1.0.0",
+  "description": "Compare difference Bonds",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+		"package": "asar pack BondDifferenceGrapher-win32-ia32/resources/app BondDifferenceGrapher-win32-ia32/resources/app.asar",
+    "build": "electron-packager ./ BondDifferenceGrapher --platform=win32 --arch=ia32 --version=0.34.0"
+  },
+  "keywords": [
+    "Bond",
+    "Difference",
+    "Grapher"
+  ],
+  "author": "GitHub",
+  "license": "MIT",
+  "bugs": {
+    "url": "zm9501@gmail.com"
+  },
+  "devDependencies": {
+    "asar": "^0.8.3",
+    "cheerio": "latest",
+    "electron-packager": "^5.1.1",
+    "electron-prebuilt": "^0.34.0",
+    "express": "latest",
+    "request": "latest"
+  },
+  "dependencies": {
+    "chart.js": "^1.0.2"
+  }
+}
