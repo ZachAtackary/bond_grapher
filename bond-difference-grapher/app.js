@@ -152,11 +152,6 @@ var oldLastDate;
 var waitOneData = false;
 
 var scraper = function(callback){
-	var selfDestruct = new Date();
-	if (selfDestruct.getFullYear() >= 2016) {
-	  document.write("AN ERROR HAS OCCURED");
-		return;
-	}
   var options = {
     url: 'http://www.investing.com/rates-bonds/government-bond-spreads',
     headers: {
@@ -200,7 +195,7 @@ var scraper = function(callback){
 
       }
       if(!stopUpdates) {
-				
+
         chart.validateData();
 				$('.amcharts-compare-div').css('max-height', '400px');
         var newStartDate = new Date(chart.startDate.getTime());
@@ -226,7 +221,7 @@ $( document ).ready(function() {
   console.log("ready");
   setTimeout(
     function(){
-			
+
 			$('.amcharts-left-div').hover(
       function() {
         console.log("hovering!");
